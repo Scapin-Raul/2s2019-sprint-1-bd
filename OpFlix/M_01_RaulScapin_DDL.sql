@@ -42,9 +42,26 @@ CREATE TABLE Favoritos(
 
 );
 
+ALTER TABLE Titulos
+	ADD Classificacao VARCHAR(20)
 
+ALTER TABLE Usuarios
+	 ADD Imagem VARCHAR(MAX)
 
+	UPDATE Usuarios
+	SET IMAGEM = 'https://i.ytimg.com/vi/Hlz7ass3gRk/maxresdefault.jpg'
+	
+	UPDATE Usuarios
+	SET IMAGEM = 'https://s.yimg.com/ny/api/res/1.2/S_.T.QCJ1jjT8geJAvkNFg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/b486faff10c2459650d92f309bad2527'
+	WHERE IdUsuario < 5
 
+	UPDATE USUARIOS
+	SET imagem = 'https://rockntech.com.br/wp-content/uploads/2014/12/gatos-famosos-na-internet_13.jpg'
+	WHERE IdUsuario <4
+
+	UPDATE USUARIOS
+	SET imagem = 'https://www.tediado.com.br/wp-content/uploads/2019/02/fotos-de-gatos-maine-coon-que-sao-super-majestosos-e-fofos-01.jpg'
+	WHERE IdUsuario <3
 
 select * from TiposTitulos
 select * from categorias
